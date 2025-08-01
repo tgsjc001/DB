@@ -1,0 +1,92 @@
+Vendor 1:
+{
+    "first_name": "Fuckyou",
+    "last_name": "Chatgpt",
+    "business_name": "",
+    "island": "2",
+    "row": "A",
+    "table_numbers": "1-14",
+    "six_ft_gun": 14,
+    "six_ft_knife": 0,
+    "six_ft_display": 0,
+    "six_ft_nonrelated": 0,
+    "eight_ft_gun": 0,
+    "eight_ft_knife": 0,
+    "eight_ft_display": 0,
+    "eight_ft_nonrelated": 0,
+    "electricity": true,
+    "on_rollover": false,
+    "rta": false,
+    "rtn": false,
+    "saturday_setup": false
+}
+--------------------------------------------------------------------------------
+Vendor 2:
+{
+    "first_name": "Fuck",
+    "last_name": "ChatGPT",
+    "business_name": "",
+    "island": "1",
+    "row": "A",
+    "table_numbers": "1-14",
+    "six_ft_gun": 0,
+    "six_ft_knife": 0,
+    "six_ft_display": 0,
+    "six_ft_nonrelated": 0,
+    "eight_ft_gun": 0,
+    "eight_ft_knife": 14,
+    "eight_ft_display": 0,
+    "eight_ft_nonrelated": 0,
+    "electricity": false,
+    "on_rollover": true,
+    "rta": false,
+    "rtn": true,
+    "saturday_setup": false
+}
+--------------------------------------------------------------------------------
+Vendor 3:
+{
+    "first_name": "Chatgpt",
+    "last_name": "can eat DN",
+    "business_name": "",
+    "island": "1",
+    "row": "LA",
+    "table_numbers": "1-14",
+    "six_ft_gun": 0,
+    "six_ft_knife": 0,
+    "six_ft_display": 0,
+    "six_ft_nonrelated": 0,
+    "eight_ft_gun": 14,
+    "eight_ft_knife": 0,
+    "eight_ft_display": 0,
+    "eight_ft_nonrelated": 0,
+    "electricity": false,
+    "on_rollover": true,
+    "rta": false,
+    "rtn": true,
+    "saturday_setup": false
+}
+--------------------------------------------------------------------------------
+Vendor 4:
+{
+    "first_name": "eat dn",
+    "last_name": "chatgpt",
+    "business_name": "",
+    "island": "2",
+    "row": "LA",
+    "table_numbers": "1-14",
+    "six_ft_gun": 0,
+    "six_ft_knife": 0,
+    "six_ft_display": 0,
+    "six_ft_nonrelated": 0,
+    "eight_ft_gun": 0,
+    "eight_ft_knife": 14,
+    "eight_ft_display": 0,
+    "eight_ft_nonrelated": 0,
+    "electricity": true,
+    "on_rollover": false,
+    "rta": false,
+    "rtn": false,
+    "saturday_setup": false
+}
+--------------------------------------------------------------------------------
