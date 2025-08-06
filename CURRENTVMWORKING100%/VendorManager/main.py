@@ -5,7 +5,7 @@ from models import Session  # ⬅ this ensures __init__.py runs and binds all re
 
 
 try:
-    from gui.login_window import LoginWindow
+    from gui.modern_login_window import LoginWindow
 
     def main():
         root = tk.Tk()
