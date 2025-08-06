@@ -26,8 +26,6 @@ class DashboardTile(tk.Frame):
 	def __init__(self, parent, title, icon, command, bg_color="#2e2e2e", hover_color="#3e3e3e",
 				 stats_text="", accent_color="#ffdf00"):
 		super().__init__(parent, bg=bg_color, relief="raised", bd=2)
-		if self.winfo_exists():
-			self.stats_update_job = self.after(30000, self.periodic_stats_update)
 		self.bg_color = bg_color
 		self.hover_color = hover_color
 		self.command = command
