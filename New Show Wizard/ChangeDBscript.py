@@ -269,9 +269,8 @@ class NewShowWizard:
             return
         
         try:
-            # Disable button during creation
-            for widget in self.root.winfo_children():
-                widget.configure(state='disabled')
+            # Disable buttons during creation
+            self.root.config(cursor="wait")
             self.root.update()
             
             # Create the database
@@ -298,9 +297,8 @@ class NewShowWizard:
                 f"An unexpected error occurred:\n\n{str(e)}"
             )
         finally:
-            # Re-enable widgets
-            for widget in self.root.winfo_children():
-                widget.configure(state='normal')
+            # Restore cursor
+            self.root.config(cursor="")
 
 
 def main():

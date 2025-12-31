@@ -4,7 +4,7 @@ Provides secure connection handling with environment variables and context manag
 """
 import os
 import psycopg2
-from psycopg2 import OperationalError, DatabaseError
+from psycopg2 import OperationalError, DatabaseError, sql
 import configparser
 from contextlib import contextmanager
 from typing import Optional, Dict
@@ -204,11 +204,16 @@ def create_database_from_template(source_db: str, target_db: str, owner: Optiona
         # Create the new database
         with get_db_connection(autocommit=True) as conn:
             with conn.cursor() as cur:
-                # Use quoted identifiers to handle special characters
-                cur.execute(f"""
-                    CREATE DATABASE "{target_db}"
-                    WITH TEMPLATE "{source_db}"
-                    OWNER {owner};
-                """)
+                # Use psycopg2.sql to properly quote identifiers and prevent SQL injection
+                query = sql.SQL("""
+                    CREATE DATABASE {target}
+                    WITH TEMPLATE {source}
+                    OWNER {owner}
+                """).format(
+                    target=sql.Identifier(target_db),
+                    source=sql.Identifier(source_db),
+                    owner=sql.Identifier(owner)
+                )
+                cur.execute(query)
     except DatabaseError as e:
         raise DatabaseError(f"Failed to create database '{target_db}': {str(e)}") from e
