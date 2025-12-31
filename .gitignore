@@ -3,3 +3,19 @@
 /CURRENTVMWORKING100%/VendorManager/dist/VendorManager
 /CURRENTVMWORKING100%/VendorManager/dist
 /CURRENTVMWORKING100%/VendorManager/dist/VendorManager
+
+# Environment variables
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
