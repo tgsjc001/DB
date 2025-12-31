@@ -22,6 +22,11 @@ A database management tool for creating new TGS show databases by cloning existi
 
 1. Install required Python packages:
    ```bash
+   pip install -r requirements.txt
+   ```
+   
+   Or install manually:
+   ```bash
    pip install psycopg2-binary
    ```
 
@@ -108,6 +113,11 @@ New Show Wizard/
 ├── db_utils.py          # Database utility functions
 ├── config.ini           # Database configuration (optional, not in version control)
 ├── .env.example         # Example environment variables
+├── requirements.txt     # Python package dependencies
+├── test_db_utils.py     # Unit tests for database utilities
+├── NewShowWizard.bat    # Windows launcher script
+├── NewShowWizard.sh     # Unix/Linux launcher script
+└── README.md            # This file
 ├── NewShowWizard.bat    # Windows launcher script
 └── NewShowWizard.sh     # Unix/Linux launcher script
 ```
